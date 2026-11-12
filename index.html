@@ -38,63 +38,65 @@
         </div>
     </header>
 
-    <!-- GALERIA DE FOTOS COM AS IMAGENS ENVIADAS -->
-    <section id="galeria" class="max-w-4xl mx-auto px-4 py-12">
-        <h2 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
-            <i class="fa-solid fa-camera text-amber-400"></i> Galeria de Shows Ao Vivo
-        </h2>
-        <p class="text-xs text-neutral-400 mb-6">Confira alguns registros das nossas apresentações e o clima da nossa roda de samba:</p>
-        
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-07 at 12.58.38.jpg" alt="R.B Samba ao vivo 1" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-07 at 13.00.14.jpg" alt="R.B Samba ao vivo 2" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-07 at 13.01.02.jpg" alt="R.B Samba ao vivo 3" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-10-23 at 11.27.59.jpeg" alt="Vocal Rodrigo Simonassi" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-06 at 12.31.51.jpeg" alt="Percussão e Voz" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-06 at 12.32.11.jpeg" alt="Cláudio Soares Percussão" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-06 at 11.38.32.jpeg" alt="Roda de Samba Descontraída" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-            <div class="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-square">
-                <img src="WhatsApp Image 2026-11-06 at 11.43.02.jpeg" alt="Dupla no Palco" class="w-full h-full object-cover hover:scale-105 transition duration-300">
-            </div>
-        </div>
-    </section>
+   
+<!-- GALERIA DE FOTOS -->
+<section id="galeria" class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+        <i class="fa-solid fa-camera text-amber-400"></i>
+        Galeria de Shows Ao Vivo
+    </h2>
 
-    <!-- DEPOIMENTOS -->
-    <section class="max-w-4xl mx-auto px-4 py-8">
-        <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-quote-left text-amber-400"></i> O que dizem os contratantes
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="bg-neutral-900 border border-neutral-800 p-5 rounded-2xl">
-                <div class="flex text-amber-400 text-xs gap-1 mb-2">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-sm text-neutral-300 italic mb-3">"Contratamos o Projeto R.B Samba para o evento do bar e a casa ficou lotada. O repertório é excelente e a galera não parou de cantar um segundo!"</p>
-                <span class="text-xs font-bold text-white">— Gerência de Bar / Evento</span>
-            </div>
-            <div class="bg-neutral-900 border border-neutral-800 p-5 rounded-2xl">
-                <div class="flex text-amber-400 text-xs gap-1 mb-2">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-sm text-neutral-300 italic mb-3">"Profissionais pontuais, som de altíssima qualidade e animação nota 10. Recomendo de olhos fechados para festas e eventos."</p>
-                <span class="text-xs font-bold text-white">— Evento Particular / Aniversário</span>
-            </div>
+    <p class="text-xs text-neutral-400 mb-6">
+        Confira alguns registros das nossas apresentações e o clima da nossa roda de samba:
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-07 at 12.58.38.jpg" alt="R.B Samba ao vivo 1" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
         </div>
-    </section>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-07 at 13.00.14.jpg" alt="R.B Samba ao vivo 2" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-07 at 13.01.02.jpg" alt="R.B Samba ao vivo 3" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-10-23 at 11.27.59.jpeg" alt="Vocal Rodrigo Simonassi" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-06 at 12.31.51.jpeg" alt="Percussão e Voz" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-06 at 12.32.11.jpeg" alt="Cláudio Soares Percussão" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-06 at 11.38.32.jpeg" alt="Roda de Samba Descontraída" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-neutral-800 aspect-square">
+            <img src="WhatsApp Image 2026-11-06 at 11.43.02.jpeg" alt="Dupla no Palco" onclick="abrirFoto(this.src, this.alt)" class="w-full h-full object-cover cursor-pointer hover:scale-110 transition duration-500">
+        </div>
+
+    </div>
+
+    <!-- VISUALIZADOR DE FOTOS -->
+    <div id="fotoModal" onclick="fecharFoto()" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/95 p-4">
+        <button onclick="fecharFoto()" class="absolute top-5 right-6 text-white text-4xl">&times;</button>
+
+        <div class="flex flex-col items-center max-w-full" onclick="event.stopPropagation()">
+            <img id="fotoAmpliada" src="" alt="" class="max-w-full max-h-[85vh] object-contain rounded-lg">
+            <p id="legendaFoto" class="text-white text-sm mt-4"></p>
+        </div>
+    </div>
+</section>
+
 
     <!-- PLANOS DE SHOW -->
     <section id="planos" class="max-w-4xl mx-auto px-4 py-12">
@@ -163,6 +165,21 @@ function enviarWhatsApp(plano) {
     window.location.href = `https://wa.me/${telefone}?text=${mensagem}`;
 }
 
+        function abrirFoto(src, legenda) {
+    document.getElementById("fotoAmpliada").src = src;
+    document.getElementById("fotoAmpliada").alt = legenda;
+    document.getElementById("legendaFoto").textContent = legenda;
+
+    const modal = document.getElementById("fotoModal");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+}
+
+function fecharFoto() {
+    const modal = document.getElementById("fotoModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}
         
     </script>
 <!-- BOTÃO FLUTUANTE WHATSAPP -->
