@@ -152,11 +152,20 @@
     </footer>
 
     <script>
-        function enviarWhatsApp(plano) {
-            // Digite o seu número de WhatsApp com DDD abaixo (Exemplo: 5511999999999)
-            const telefone = "5511999999999"; 
-            const mensagem = encodeURIComponent(`Olá! Gostaria de consultar a disponibilidade de data e valores para o ${plano}.`);
-            window.open(`https://wa.me/${telefone}?text=${mensagem}`, '_blank');
+       
+function enviarWhatsApp(plano) {
+    const telefone = "5511974801371";
+
+    const mensagem = encodeURIComponent(
+        `Olá! Gostaria de consultar a disponibilidade de data e valores para o ${plano}.`
+    );
+
+    window.open(
+        `https://wa.me/${telefone}?text=${mensagem}`,
+        '_blank'
+    );
+}
+
         }
     </script>
 </body>
