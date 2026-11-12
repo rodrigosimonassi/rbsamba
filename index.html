@@ -160,13 +160,10 @@ function enviarWhatsApp(plano) {
         `Olá! Gostaria de consultar a disponibilidade de data e valores para o ${plano}.`
     );
 
-    window.open(
-        `https://wa.me/${telefone}?text=${mensagem}`,
-        '_blank'
-    );
+    window.location.href = `https://wa.me/${telefone}?text=${mensagem}`;
 }
 
-        }
+        
     </script>
 </body>
 </html>
